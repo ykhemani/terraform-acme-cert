@@ -1,0 +1,7 @@
+"tls_private_key_algorithm" = "RSA"
+"email_address"             = "devops@example.com"
+"common_name"               = "*.example.com"
+#subject_alternative_names   = ["www.example.com"]
+"dns_challenge_provider"    = "digitalocean"
+"acme_server_url"           = "https://acme-staging-v02.api.letsencrypt.org/directory"
+#"acme_server_url"           = "https://acme-v02.api.letsencrypt.org/directory"
