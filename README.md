@@ -20,7 +20,7 @@ Go into the directory where you've cloned your repo and initialize Terraform.
 terraform init
 ```
 
-Edit `terraform.tfvars` for your use case.
+Copy `terraform.tfvars.example` to `terraform.tfvars` and edit for your use case.
 
 - `email_address` -- your email address.
 - `common_name` -- The certificate's common name, the primary domain that the certificate will be recognized for. e.g. `www.example.com`. You can also specify a wildcard. e.g. `*.example.com`.
