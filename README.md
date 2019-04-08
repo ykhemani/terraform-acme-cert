@@ -22,10 +22,10 @@ terraform init
 
 Edit `terraform.tfvars` for your use case.
 
-`email_address` -- your email address.
-`common_name` -- The certificate's common name, the primary domain that the certificate will be recognized for. e.g. `www.example.com`. You can also specify a wildcard. e.g. `*.example.com`.
-`dns_challenge_provider` -- the DNS provider for the domain. Also set the appropriate environment variables to enable you to authenticate with your DNS provider. For example, with Route 53, you would set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
-`acme_server_url` -- Set the ACME Server URL to the Staging endpoint for Lets Encrypt while you are testing. Switch to the production endpoint when you're ready to issue your certificate.
+- `email_address` -- your email address.
+- `common_name` -- The certificate's common name, the primary domain that the certificate will be recognized for. e.g. `www.example.com`. You can also specify a wildcard. e.g. `*.example.com`.
+- `dns_challenge_provider` -- the DNS provider for the domain. Also set the appropriate environment variables to enable you to authenticate with your DNS provider. For example, with Route 53, you would set `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+- `acme_server_url` -- Set the ACME Server URL to the Staging endpoint for Lets Encrypt while you are testing. Switch to the production endpoint when you're ready to issue your certificate.
 
 Run `terraform plan` and confirm that it looks as you expect.
 
