@@ -31,13 +31,12 @@ Run `terraform plan` and confirm that it looks as you expect.
 
 Finally, run `terraform apply` to generate your private key and SSL certiciate.
 
-The Private Key will be saved in the file `privkey.pem`. 
+The Private Key will be saved in the file `privkey.pem`.
 
 The Issuer Certiciate will be saved in the file `issuer.pem`.
 
 The Certiciate will be saved in the file `certificate.pem`.
 
-You may want to create a file that combines `certificate.pem` and `issuer.pem` into a single file depending on your use case. That file might be called `fullchain.pem`.
+The Certificate and Issuer Certificate will also be saved together in the file `fullchaim.pem`.
 
 Please do not commit the Private Key to version control!
-

@@ -27,8 +27,12 @@ resource "local_file" "issuer" {
   filename = "issuer.pem"
 }
 
+resource "local_file" "fullchain" {
+  content = "${acme_certificate.certificate.certificate_pem}${acme_certificate.certificate.issuer_pem}"
+  filename = "fullchain.pem"
+}
+
 resource "local_file" "private_key" {
   content = "${acme_certificate.certificate.private_key_pem}"
   filename = "privkey.pem"
 }
-
