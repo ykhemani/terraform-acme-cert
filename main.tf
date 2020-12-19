@@ -10,7 +10,7 @@ resource "acme_registration" "reg" {
 resource "acme_certificate" "certificate" {
   account_key_pem           = acme_registration.reg.account_key_pem
   common_name               = var.common_name
-#  subject_alternative_names = ["www.domain.com"]
+  subject_alternative_names = var.san
 
   dns_challenge {
     provider = var.dns_challenge_provider
